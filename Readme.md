@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Майсейчик](https://up.htmlacademy.ru/htmlcss/22/user/804267).
-* Наставник: [Ирина Малиновская] (https://up.htmlacademy.ru/htmlcss/22/user/29644).
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/22/user/29644).
 
 ---
 
