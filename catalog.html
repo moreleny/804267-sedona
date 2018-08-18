@@ -24,7 +24,52 @@
         <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр выбора жилья</h2>
-          <!--здесь будет форма с фильтрами -->
+          <form  action="#" method="get">
+		        <div class="filters-check">
+			        <fieldset class="infrastructure">
+			          <legend>Инфраструктура:</legend>
+			          <label for="pool">
+			            <input type="checkbox" id="pool" name="pool" checked>
+			            Бассейн
+			          </label>
+			          <label for="parking">
+			            <input type="checkbox" id="parking" name="parking">
+			            Парковка
+			          </label>
+                <label for="wifi">
+			            <input type="checkbox" id="wifi" name="wifi">
+			            Wi-fi
+			          </label>
+			        </fieldset>
+			        <fieldset class="house-style">
+			          <legend>Тип жилья:</legend>
+			          <label for="hotel">
+			            <input type="checkbox" id="hotel" name="hotel" checked>
+			            Гостиница
+			          </label>
+			          <label for="motel">
+			            <input type="checkbox" id="motel" name="motel" checked>
+			            Мотель
+			          </label>
+			          <label for="apartments">
+			            <input type="checkbox" id="apartments" name="apartments" checked>
+			            Апартаменты
+			          </label>
+			        </fieldset>
+		        </div>
+		        <fieldset class="filter-price">
+			        <legend>Стоимость в сутки (р):</legend>
+			        <div class="price">
+			          <label>от<input type="text" name="min" value="0"></label>
+			          <label>до<input type="text" name="max" value="3000"></label>
+			        </div>
+			        <div class="range">
+                <label class="visually-hidden"><input type="range" name="range-from" >от</label>
+                <label class="visually-hidden"><input type="range" name="range-to">до</label>
+              </div>
+			  			<button type="submit">Показать</button>
+		        </fieldset>
+		      </form>
         </section>
         <section class="sorting-option">
 	      <h2 class="visually-hidden">Параметры сортировки</h2>
@@ -52,10 +97,10 @@
       		  <h4><a href="#">Amara Resort & Spa</a></h4>
 			  <!--звездочки будут через svg
       		  <div class="rating-count">
-                <span class="count-star">★</span>
-      			<span class="count-star">★</span>
-      			<span class="count-star">★</span>
-      			<span class="count-star">★</span>
+              <span class="count-star">★</span>
+      			  <span class="count-star">★</span>
+      			  <span class="count-star">★</span>
+      			  <span class="count-star">★</span>
       		  </div>
 				-->
       		</div>
@@ -80,8 +125,8 @@
 			  <!--звездочки будут через svg
       		  <div class="rating-count">
       		    <span class="count-star">★</span>
-      			<span class="count-star">★</span>
-      	        <span class="count-star">★</span>
+      			  <span class="count-star">★</span>
+      	      <span class="count-star">★</span>
       		  </div>
 				-->
       		</div>
@@ -105,8 +150,8 @@
       		  <h4><a href="#">Villas At Poco Diablo</a></h4>
 			  <!--звездочки будут через svg
       		  <div class="rating-count">
-      			<span class="count-star">★</span>
-      			<span class="count-star">★</span>
+      			  <span class="count-star">★</span>
+      			  <span class="count-star">★</span>
       		  </div>
 				-->
       		</div>
