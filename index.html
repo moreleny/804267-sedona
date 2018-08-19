@@ -31,12 +31,12 @@
           <p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         </section>
         <section class="reason-blue-pic">
-          <div class="reason">
+          <div class="reason left-side">
             <h3>Настоящий городок</h3>
             <span>— №1 —</span>
             <p>Седона - не аттракцион для туристов,там течет своя жизнь</p>
           </div>
-          <!--фон мотель-->
+          <div class="reason-pic pic-right-side"></div>
 		    </section>
         <section class="advices">
 		      <h2 class="visually-hidden">Мы  советуем</h2>
@@ -58,8 +58,8 @@
         </section>
 <!--по логике документа блок советов должен идти ниже причин, но дизайнер решил иначе, поэтому h3 из последующих блоков причин относятся к h2 в промо -->
         <section class="reason-blue-pic">
-          <!--фон каньон -->
-          <div class="reason">
+          <div class="reason-pic pic-left-side"></div>
+          <div class="reason right-side">
             <h3>Там есть мост дьявола</h3>
             <span>— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -85,10 +85,8 @@
         <section class="interested">
           <h2>Заинтересовались?</h2>
 	        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-		      <a class="btn-search" href="#" >Поиск гостиницы в Седоне</a>
-	      </section>
-        <div class="search-form-container">
-		      <form class="search-form" action="echo.htmlacademy.ru" method="post">
+		      <a class="btn-search" href="form.html" >Поиск гостиницы в Седоне</a>
+          <form class="search-form" action="echo.htmlacademy.ru" method="post">
 		        <div class="form-row">
 		          <label for="date-arrive">Дата заезда:</label>
 			        <input type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2017" required>
@@ -101,19 +99,19 @@
             </div>
 		  	    <div class="half-form-row">
 			        <label for="adults">Взрослые:</label>
+              <button type="button">минус</button>
 			        <input type="text" id="adults" name="adults" placeholder="2" required>
-			        <button type="button">минус</button>
 			        <button type="button">плюс</button>
 			      </div>
 			      <div class="half-form-row">
 			        <label for="kids">Дети:</label>
+              <button  type="button">минус</button>
 			        <input type="text"  id="kids" name="kids" placeholder="0" required>
-			        <button  type="button">минус</button>
 			        <button  type="button">плюс</button>
 			      </div>
 		        <button type="submit">Найти</button>
 		      </form>
-	      </div>
+	      </section>
         <section class="map">
 	        <h2 class="visually-hidden">Карта</h2>
           <!--фон карта -->
