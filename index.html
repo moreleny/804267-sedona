@@ -6,6 +6,9 @@
     <meta name="keywords" content="Седона, Аризона, Каньон, Гранд-каньон, Мост Дьявола, #visitsedona">
     <meta name="author" content="https://htmlacademy.ru/profile/id804267">
     <title>Седона: Главная страница</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="container">
@@ -22,8 +25,7 @@
 	    </header>
       <main>
         <div class="greeting-logo">
-          <!--фон горы -->
-		      <h1 class="visually-hidden">Отдых в Седоне</h1>
+          <h1 class="visually-hidden">Отдых в Седоне</h1>
           <img src="img/greeting-logo.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         </div>
         <section class="promo">
@@ -41,17 +43,17 @@
         <section class="advices">
 		      <h2 class="visually-hidden">Мы  советуем</h2>
           <div class="advice">
-		    <!--здесь будет домик -->
+		        <div class="advice-house"></div>
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
 		      <div class="advice">
-            <!--здесь будет бургер -->
+            <div class="advice-food"></div>
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
           </div>
           <div class="advice">
-            <!--здесь будет подарок -->
+            <div class="advice-gift"></div>
             <h3>Сувениры</h3>
             <p>Не только китайского,но и местного производства!</p>
           </div>
@@ -90,26 +92,28 @@
 		        <div class="form-row">
 		          <label for="date-arrive">Дата заезда:</label>
 			        <input type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2017" required>
-			        <button type="button"><span class="visually-hidden">Календарь</span></button>
+			        <button class="icon-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
 		        </div>
 		        <div class="form-row">
 			        <label for="date-departure">Дата выезда:</label>
 			        <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017" required>
-			        <button type="button"><span class="visually-hidden">Календарь</span></button>
+			        <button class="icon-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
             </div>
-		  	    <div class="half-form-row">
-			        <label for="adults">Взрослые:</label>
-              <button type="button"><span class="visually-hidden">минус</span></button>
-			        <input type="text"  id="kids" name="kids" placeholder="0" required>
-			        <button type="button"><span class="visually-hidden">плюс</span></button>
-			      </div>
-			      <div class="half-form-row">
-			        <label for="kids">Дети:</label>
-              <button type="button"><span class="visually-hidden">минус</span></button>
-			        <input type="text"  id="kids" name="kids" placeholder="0" required>
-			        <button type="button"><span class="visually-hidden">плюс</span></button>
-			      </div>
-		        <button type="submit">Найти</button>
+            <div class="half-form-rows">
+              <div class="form-row left-side">
+                <label for="adults">Взрослые:</label>
+                <button class="btn-minus" type="button"><span class="visually-hidden">минус</span></button>
+                <input  class="count" type="text"  id="adults" name="adults" placeholder="2" required>
+                <button class="btn-plus" type="button"><span class="visually-hidden">плюс</span></button>
+              </div>
+              <div class="form-row right-side">
+                <label for="kids">Дети:</label>
+                <button class="btn-minus" type="button"><span class="visually-hidden">минус</span></button>
+                <input  class="count" type="text"  id="kids" name="kids" placeholder="0" required>
+                <button class="btn-plus"  type="button"><span class="visually-hidden">плюс</span></button>
+              </div>
+            </div>
+		        <button class="form-btn-search" type="submit">Найти</button>
 		      </form>
 	      </section>
         <section class="map">
