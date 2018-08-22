@@ -16,11 +16,11 @@
         <a class="main-logo" href="./index.html">
 		      <img src="img/main-logo.svg" width="140" height="71" alt="Седона">
 		    </a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+        <ul class="main-header-list">
+          <li class="main-header-list-item"><a class="main-header-link" href="#">Информация</a></li>
+          <li class="main-header-list-item"><a class="main-header-link" href="#">Фото и видео</a></li>
+          <li class="main-header-list-item"><a class="main-header-link" href="#">Карта штата</a></li>
+          <li class="main-header-list-item"><a class="main-header-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 	  </header>
       <main>
@@ -29,32 +29,32 @@
           <h2 class="visually-hidden">Фильтр выбора жилья</h2>
           <form  action="#" method="get">
 		        <div class="filters-check">
-			        <fieldset class="infrastructure">
+			        <fieldset class="filter-infrastructure">
 			          <legend>Инфраструктура:</legend>
-			          <label for="pool">
+			          <label class="filters-label" for="pool">
 			            <input type="checkbox" id="pool" name="pool" checked>
 			            Бассейн
 			          </label>
-			          <label for="parking">
+			          <label class="filters-label" for="parking">
 			            <input type="checkbox" id="parking" name="parking">
 			            Парковка
 			          </label>
-                <label for="wifi">
+                <label class="filters-label" for="wifi">
 			            <input type="checkbox" id="wifi" name="wifi">
 			            Wi-fi
 			          </label>
 			        </fieldset>
-			        <fieldset class="house-style">
+			        <fieldset class="filter-house">
 			          <legend>Тип жилья:</legend>
-			          <label for="hotel">
+			          <label class="filters-label" for="hotel">
 			            <input type="checkbox" id="hotel" name="hotel" checked>
 			            Гостиница
 			          </label>
-			          <label for="motel">
+			          <label class="filters-label" for="motel">
 			            <input type="checkbox" id="motel" name="motel" checked>
 			            Мотель
 			          </label>
-			          <label for="apartments">
+			          <label class="filters-label" for="apartments">
 			            <input type="checkbox" id="apartments" name="apartments" checked>
 			            Апартаменты
 			          </label>
@@ -63,8 +63,8 @@
 		        <fieldset class="filter-price">
 			        <legend>Стоимость в сутки (р):</legend>
 			        <div class="price">
-			          <label>от<input type="text" name="min" value="0"></label>
-			          <label>до<input type="text" name="max" value="3000"></label>
+			          <label class="filters-label">от<input class="price-input" type="text" name="min" value="0"></label>
+			          <label class="filters-label">до<input class="price-input" type="text" name="max" value="3000"></label>
 			        </div>
 			        <div class="range visually-hidden">
                 <label class="visually-hidden"><input type="range" name="range-from" >от</label>
@@ -83,18 +83,18 @@
         </section>
         <section class="sorting-option">
 	        <h2 class="visually-hidden">Параметры сортировки</h2>
-		      <span>Найдено: 3</span>
+		      <span class="sorting-option-found">Найдено: 3</span>
 		      <div class="sorting-type">
-		        <span>Сортировка:</span>
-		        <ul>
-			        <li><a href="#">По цене</a></li>
-			        <li><a href="#">По типу</a></li>
-			        <li><a href="#">По рейтингу</a></li>
+		        <span class="sorting-type-title">Сортировка:</span>
+		        <ul class="sorting-type-list">
+			        <li><a class="sorting-type-item" href="#">По цене</a></li>
+			        <li><a class="sorting-type-item" href="#">По типу</a></li>
+			        <li><a class="sorting-type-item" href="#">По рейтингу</a></li>
 		        </ul>
 		      </div>
-		      <div class="btn-arrow">
-		        <a class="up" href="#" ><span class="visually-hidden">вверх</span></a>
-		        <a class="down" href="#"><span class="visually-hidden">вниз</span></a>
+		      <div class="btn-arrows">
+		        <a class="btn-arrow btn-arrow-up" href="#" ><span class="visually-hidden">вверх</span></a>
+		        <a class="btn-arrow btn-arrow-down" href="#"><span class="visually-hidden">вниз</span></a>
 		      </div>
 	      </section>
         <h3 class="visually-hidden">Результаты поиска</h3>
@@ -105,12 +105,12 @@
       	    </figure>
       	    <div class="result-content">
       	      <div class="row-result-title-count">
-      		      <h4><a href="#">Amara Resort & Spa</a></h4>
+      		      <h4 class="result-title"><a class="result-title-link" href="#">Amara Resort & Spa</a></h4>
 			  	      <div class="rating-count">
-                  <span class="count-star">★</span><!--чтобы было видно на макете -->
-      			      <span class="count-star">★</span>
-      			      <span class="count-star">★</span>
-      			      <span class="count-star">★</span>
+                  <span class="rating-count-star">★</span><!--чтобы было видно на макете -->
+      			      <span class="rating-count-star">★</span>
+      			      <span class="rating-count-star">★</span>
+      			      <span class="rating-count-star">★</span>
       		      </div>
 					    </div>
       		    <div class="result-info">
@@ -119,8 +119,8 @@
       		    </div>
       		    <div class="row-result-action-rating">
                 <div class="result-action-btns">
-      	          <a class="more-info" href="#">подробнее</a>
-      		        <a class="reserve" href="#">забронировать</a>
+      	          <a class="result-action-btn rab-more-info" href="#">подробнее</a>
+      		        <a class="result-action-btn rab-reserve" href="#">забронировать</a>
                 </div>
       		      <span class="rating">рейтинг: 8,5</span>
       	      </div>
@@ -132,11 +132,11 @@
       	    </figure>
       	    <div class="result-content">
       	      <div class="row-result-title-count">
-      		      <h4><a href="#">Desert Quail Inn</a></h4>
+      		      <h4 class="result-title"><a class="result-title-link" href="#">Desert Quail Inn</a></h4>
 			  	      <div class="rating-count">
-      		        <span class="count-star">★</span>
-      			      <span class="count-star">★</span>
-      	          <span class="count-star">★</span>
+      		        <span class="rating-count-star">★</span>
+      			      <span class="rating-count-star">★</span>
+      	          <span class="rating-count-star">★</span>
       		      </div>
 					    </div>
       		    <div class="result-info">
@@ -145,8 +145,8 @@
       		    </div>
       		    <div class="row-result-action-rating">
                 <div class="result-action-btns">
-      	          <a class="more-info" href="#">подробнее</a>
-      		        <a class="reserve" href="#">забронировать</a>
+      	          <a class="result-action-btn rab-more-info" href="#">подробнее</a>
+      		        <a class="result-action-btn rab-reserve" href="#">забронировать</a>
                 </div>
       		      <span class="rating">рейтинг: 8,9</span>
       		    </div>
@@ -158,10 +158,10 @@
       	    </figure>
       	    <div class="result-content">
       	      <div class="row-result-title-count">
-      		      <h4><a href="#">Villas At Poco Diablo</a></h4>
+      		      <h4 class="result-title"><a class="result-title-link" href="#">Villas At Poco Diablo</a></h4>
 			  	      <div class="rating-count">
-      			      <span class="count-star">★</span>
-      			      <span class="count-star">★</span>
+      			      <span class="rating-count-star">★</span>
+      			      <span class="rating-count-star">★</span>
       		      </div>
 					    </div>
       		    <div class="result-info">
@@ -170,8 +170,8 @@
       		    </div>
       		    <div class="row-result-action-rating">
                 <div class="result-action-btns">
-      	          <a class="more-info" href="#">подробнее</a>
-      		        <a class="reserve" href="#">забронировать</a>
+      	          <a class="result-action-btn rab-more-info" href="#">подробнее</a>
+      		        <a class="result-action-btn rab-reserve" href="#">забронировать</a>
                 </div>
       		      <span class="rating">рейтинг: 9,2</span>
       		    </div>
@@ -187,8 +187,8 @@
           <a class="social-btn social-btn-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
         </div>
         <div class="footer-copyright">
-          <span>Website by</span>
-          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML ACADEMY</span></a>
+          <span class="footer-copyright-desc">Website by</span>
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML ACADEMY</span></a>
         </div>
       </footer>
     </div>

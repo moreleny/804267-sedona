@@ -13,14 +13,14 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <a class="main-logo" href="./index.html">
+        <a class="main-header-logo" href="./index.html">
 		      <img src="img/main-logo.svg" width="140" height="71" alt="Седона">
 		    </a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+        <ul class="main-header-list">
+          <li class="main-header-list-item"><a class="main-header-link" href="#">Информация</a></li>
+          <li class="main-header-list-item"><a class="main-header-link" href="#">Фото и видео</a></li>
+          <li class="main-header-list-item"><a class="main-header-link" href="#">Карта штата</a></li>
+          <li class="main-header-list-item"><a class="main-header-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 	    </header>
       <main>
@@ -34,8 +34,8 @@
         </section>
         <section class="reason-blue-pic">
           <div class="reason left-side">
-            <h3>Настоящий городок</h3>
-            <span>— №1 —</span>
+            <h3 class="reason-blue-title">Настоящий городок</h3>
+            <span class="reason-blue-number">— №1 —</span>
             <p>Седона - не аттракцион для туристов,там течет своя жизнь</p>
           </div>
           <div class="reason-pic pic-right-side"></div>
@@ -44,17 +44,17 @@
 		      <h2 class="visually-hidden">Мы  советуем</h2>
           <div class="advice">
 		        <div class="advice-house"></div>
-            <h3>Жилье</h3>
+            <h3 class="advice-title">Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
 		      <div class="advice">
             <div class="advice-food"></div>
-            <h3>Еда</h3>
+            <h3 class="advice-title">Еда</h3>
             <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
           </div>
           <div class="advice">
             <div class="advice-gift"></div>
-            <h3>Сувениры</h3>
+            <h3 class="advice-title">Сувениры</h3>
             <p>Не только китайского,но и местного производства!</p>
           </div>
         </section>
@@ -62,55 +62,55 @@
         <section class="reason-blue-pic">
           <div class="reason-pic pic-left-side"></div>
           <div class="reason right-side">
-            <h3>Там есть мост дьявола</h3>
-            <span>— №2 —</span>
+            <h3 class="reason-blue-title">Там есть мост дьявола</h3>
+            <span class="reason-blue-number">— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
         <section class="reasons-grey">
           <div class="reason">
-            <h3>Небольшая площадь</h3>
-            <span>— №3 —</span>
+            <h3 class="reason-grey-title">Небольшая площадь</h3>
+            <span class="reason-grey-number">— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="reason">
-            <h3>Красивая дорога</h3>
-            <span>— №4 —</span>
+            <h3 class="reason-grey-title">Красивая дорога</h3>
+            <span class="reason-grey-number">— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="reason">
-            <h3>Мало туристов</h3>
-            <span>— №5 —</span>
+            <h3 class="reason-grey-title">Мало туристов</h3>
+            <span class="reason-grey-number">— №5 —</span>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </div>
         </section>
         <section class="interested">
-          <h2>Заинтересовались?</h2>
+          <h2 class="interested-title">Заинтересовались?</h2>
 	        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		      <a class="btn-search" href="form.html" >Поиск гостиницы в Седоне</a>
           <form class="search-form" action="echo.htmlacademy.ru" method="post">
 		        <div class="form-row">
-		          <label for="date-arrive">Дата заезда:</label>
-			        <input type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2017" required>
-			        <button class="icon-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
+		          <label class="form-label" for="date-arrive">Дата заезда:</label>
+			        <input class="form-input" type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2017" required>
+			        <button class="form-btn btn-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
 		        </div>
 		        <div class="form-row">
-			        <label for="date-departure">Дата выезда:</label>
-			        <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017" required>
-			        <button class="icon-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
+			        <label class="form-label" for="date-departure">Дата выезда:</label>
+			        <input class="form-input" type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017" required>
+			        <button class="form-btn btn-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
             </div>
             <div class="half-form-rows">
               <div class="form-row left-side">
-                <label for="adults">Взрослые:</label>
-                <button class="btn-minus" type="button"><span class="visually-hidden">минус</span></button>
-                <input  class="count" type="text"  id="adults" name="adults" placeholder="2" required>
-                <button class="btn-plus" type="button"><span class="visually-hidden">плюс</span></button>
+                <label class="form-label" for="adults">Взрослые:</label>
+                <button class="form-btn btn-minus" type="button"><span class="visually-hidden">минус</span></button>
+                <input  class="form-input count" type="text"  id="adults" name="adults" placeholder="2" required>
+                <button class="form-btn btn-plus" type="button"><span class="visually-hidden">плюс</span></button>
               </div>
               <div class="form-row right-side">
-                <label for="kids">Дети:</label>
-                <button class="btn-minus" type="button"><span class="visually-hidden">минус</span></button>
-                <input  class="count" type="text"  id="kids" name="kids" placeholder="0" required>
-                <button class="btn-plus"  type="button"><span class="visually-hidden">плюс</span></button>
+                <label class="form-label" for="kids">Дети:</label>
+                <button class="form-btn btn-minus" type="button"><span class="visually-hidden">минус</span></button>
+                <input  class="form-input count" type="text"  id="kids" name="kids" placeholder="0" required>
+                <button class="form-btn btn-plus"  type="button"><span class="visually-hidden">плюс</span></button>
               </div>
             </div>
 		        <button class="form-btn-search" type="submit">Найти</button>
@@ -129,8 +129,8 @@
           <a class="social-btn social-btn-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
         </div>
         <div class="footer-copyright">
-          <span>Website by</span>
-          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML ACADEMY</span></a>
+          <span class="footer-copyright-desc">Website by</span>
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML ACADEMY</span></a>
         </div>
       </footer>
     </div>
