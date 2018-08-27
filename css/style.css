@@ -52,8 +52,9 @@ a {
   margin: 0;
   padding: 0;
   width: 240px;
-  min-height:56px;
+  min-height: 56px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .main-header-list-item:nth-child(3) {
@@ -70,9 +71,8 @@ a {
 }
 
 .main-header-link {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: inline-block;
+  padding: 15px 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -156,11 +156,11 @@ a {
   
 }
 
-.pic-left-side {
+.pic-right-side {
   background: #81b3d2 url("../img/canyon.jpg") no-repeat;
 }
 
-.pic-right-side {
+.pic-left-side {
   background: #81b3d2 url("../img/motel.jpg") no-repeat;
 }
 
@@ -488,8 +488,15 @@ a {
 /*----Форма в Мэйне конец-----*/
 
 .map {
-  height: 474px;
+  height: 473px;
   background: #ffffff url(../img/map.jpg) 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /*Футер*/
@@ -503,7 +510,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 35px 0;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-block {
@@ -754,6 +762,19 @@ a {
   font: inherit;
   color: inherit;
   background: none;
+}
+
+.price-input::-webkit-input-placeholder {
+  color: inherit;
+}
+.price-input:-ms-input-placeholder {
+  color: inherit;
+}
+.price-input::-ms-input-placeholder {
+  color: inherit;
+}
+.price-input::placeholder {
+  color: inherit;
 }
 
 .range-art {
@@ -1070,3 +1091,5 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
+
