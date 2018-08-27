@@ -156,11 +156,11 @@ a {
   
 }
 
-.pic-right-side {
+.pic-left-side {
   background: #81b3d2 url("../img/canyon.jpg") no-repeat;
 }
 
-.pic-left-side {
+.pic-right-side {
   background: #81b3d2 url("../img/motel.jpg") no-repeat;
 }
 
