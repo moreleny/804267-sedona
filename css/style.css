@@ -502,8 +502,6 @@ a {
 
 /*Футер*/
 .main-footer {
-  position: absolute;
-  bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,6 +513,11 @@ a {
   align-items: center;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.index-footer {
+  position: absolute;
+  bottom: 0px;
 }
 
 .footer-block {
