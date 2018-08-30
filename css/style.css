@@ -419,14 +419,13 @@ a {
   background: transparent;
 }
 
-.btn-calendar-svgpath {
-  opacity: 0.3;
+.btn-calendar:hover {
+  cursor: pointer;
 }
 
 .btn-calendar-svgpath:hover,
 .btn-calendar-svgpath:focus {
-  opacity:1;
-  cursor: pointer;
+  fill:rgba(0, 0, 0, 1)
 }
 
 .btn-calendar-svgpath:active {
@@ -510,11 +509,11 @@ a {
 }
 
 .half-row-input::-webkit-input-placeholder {
-  text-align: center;;
+  text-align: center;
 }
 
 .half-row-input:-ms-input-placeholder {
-  text-align: center;;
+  text-align: center;
 }
 
 .half-row-input::-ms-input-placeholder {
@@ -550,12 +549,13 @@ a {
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .form-btn-search:hover,
 .form-btn-search:focus {
   background-color: #669ec0;
+  cursor: pointer;
 }
 
 .form-btn-search:active {
@@ -610,7 +610,7 @@ a {
 }
 
 .social-btns {
-  text-align:center;
+  text-align: center;
 }
 
 .social-btn {
@@ -862,6 +862,7 @@ a {
 .price-input {
   width: 50px;
   margin: 0;
+  margin-left: 3px;
   border: none;
   outline: none;
   font: inherit;
@@ -1076,7 +1077,7 @@ a {
 .result-pic {
   width: 135px;
   margin: 5px 30px 0 0;
-  padding:0;
+  padding: 0;
 }
 
 .result-content {
@@ -1100,8 +1101,8 @@ a {
 }
 
 .result-title {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -1169,31 +1170,31 @@ a {
   color: #ffffff;
 }
 
-.rab-more-info {
+.btn-more-info {
   margin-right: 3px;
   background-color: #81b3d2;
 }
 
-.rab-more-info:hover,
-.rab-more-info:focus {
+.btn-more-info:hover,
+.btn-more-info:focus {
   background-color: #669ec0;
 }
 
-.rab-more-info:active {
+.btn-more-info:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-.rab-reserve {
+.btn-reserve {
   background-color: #766357;
 }
 
-.rab-reserve:hover,
-.rab-reserve:focus {
+.btn-reserve:hover,
+.btn-reserve:focus {
   background-color: #604e43;
 }
 
-.rab-reserve:active {
+.btn-reserve:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
