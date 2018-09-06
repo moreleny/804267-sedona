@@ -53,12 +53,12 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
+   flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -66,16 +66,25 @@ a {
 }
 
 .main-header-list-item {
-  width: 239px;
+  width: 240px;
   min-height: 56px;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
+}
+
+.main-header-list-item:first-child {
+  padding-left: 74px;
 }
 
 .main-header-list-item:nth-child(3) {
   margin-left: auto;
-}
+  text-align: right;
+ }
 
+.main-header-list-item:last-child {
+  padding-right: 74px;
+  text-align: right;
+}
 
 .main-header-logo {
   display: block;
@@ -89,7 +98,7 @@ a {
 .main-header-link {
   display: inline-block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 15px 0;
   font-size: 14px;
   font-weight: bold;
@@ -127,7 +136,7 @@ a {
   height: 353px;
   padding: 76px 0 79px;
   text-align: center;
-  background: url("../img/mask-shape.png") no-repeat  0 100%,
+  background:  url("../img/mask-shape.png") no-repeat  0 100%,
               #81b3d2 url("../img/greeting-mountains.jpg") no-repeat 0 22%;
 }
 
@@ -420,9 +429,9 @@ a {
 
 .form-input:active,
 .form-input:focus {
-  -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
-  box-shadow: inset 0 0 0 2px #e5e5e5;
-  background-color: #ffffff;
+	-webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+	box-shadow: inset 0 0 0 2px #e5e5e5;
+	background-color: #ffffff;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -439,6 +448,11 @@ a {
 
 .form-input::placeholder {
   color: inherit;
+}
+
+.form-input::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
 }
 
 .date {
@@ -477,35 +491,35 @@ a {
   cursor: pointer;
 }
 
-.btn-calendar-svgpath:hover,
-.btn-calendar-svgpath:focus {
+.btn-calendar:hover .btn-calendar-svgpath,
+.btn-calendar:focus .btn-calendar-svgpath {
   fill:rgba(0, 0, 0, 1)
 }
 
-.btn-calendar-svgpath:active {
+.btn-calendar:active .btn-calendar-svgpath {
   fill: #81b3d2;
 }
 
 .half-form-rows {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   margin-bottom: 55px;
 }
 
 .half-form-row {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   -webkit-box-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 50%;
   height: 38px;
 }
@@ -513,13 +527,13 @@ a {
 .half-row-adults,
 .half-row-kids {
   position: relative;
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 114px;
   height: 38px;
 }
@@ -581,12 +595,12 @@ a {
   text-align: center;
 }
 
-.half-row-svgpath:hover,
-.half-row-svgpath:focus {
+.half-row-btn:hover .half-row-svgpath,
+.half-row-btn:focus .half-row-svgpath {
   fill: rgba(0, 0, 0, 1);
 }
 
-.half-row-svgpath:active {
+.half-row-btn:active .half-row-svgpath {
   fill: #81b3d2;
 }
 
@@ -645,7 +659,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 100%;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -700,8 +714,8 @@ a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
   background: url("../img/twitter.svg");
@@ -713,8 +727,8 @@ a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 12px;
   height: 22px;
   background: url("../img/facebook.svg");
@@ -726,8 +740,8 @@ a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 20px;
   height: 16px;
   background: url("../img/youtube.svg");
@@ -760,13 +774,17 @@ a {
   height: 41px;
 }
 
-.footer-copyright-logo-svgpath:hover,
-.footer-copyright-logo-svgpath:focus {
+.footer-copyright-logo-svgpath {
+	fill: rgba(0, 0, 0, 1);
+}
+
+.footer-copyright-logo:hover .footer-copyright-logo-svgpath,
+.footer-copyright-logo:focus .footer-copyright-logo-svgpath {
   fill: #81b3d2;
 }
 
-.footer-copyright-logo-svgpath:active {
-  opacity: 0.3;
+.footer-copyright-logo:active .footer-copyright-logo-svgpath {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 /* СТРАНИЦА КАТАЛОГА */
@@ -783,7 +801,7 @@ a {
 }
 
 .filters {
-  padding: 28px 72px 28px;
+  padding: 28px 72px;
   color: #ffffff;
   background: #4e7faa url("../img/catalog-filter.jpg") no-repeat 0 15%;
 }
@@ -807,7 +825,13 @@ a {
 
 .filter-infrastructure,
 .filter-house {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   vertical-align: top;
   width: 255px;
   margin: 0;
@@ -836,6 +860,7 @@ a {
 .filters-label {
   display: block;
   position: relative;
+  width: 100px;
   min-height: 23px;
   margin-bottom: 23px;
   padding-left: 40px;
@@ -848,11 +873,8 @@ a {
   margin-bottom: 0;
 }
 
-.filter-checkbox {
-  display: none;
-}
-
-.filter-checkbox + .checkbox-switch {
+.filter-checkbox + .filters-label:before {
+	content: " ";
   position: absolute;
   top: 0;
   left: 0;
@@ -861,11 +883,13 @@ a {
   background: url("../img/checkbox-off.svg")  no-repeat;
 }
 
-.filter-checkbox:disabled + .checkbox-switch {
+.filter-checkbox:disabled + .filters-label,
+.filter-checkbox:checked:disabled + .filters-label {
   opacity: 0.5;
 }
 
-.filter-checkbox:checked + .checkbox-switch {
+.filter-checkbox:checked + .filters-label:before {
+	content: " ";
   position: absolute;
   top: 0;
   left: 0;
@@ -874,14 +898,17 @@ a {
   background: url("../img/checkbox-on.svg")  no-repeat;
 }
 
-.filter-checkbox:checked:disabled + .checkbox-switch {
-   opacity: 0.5;
-  
+.filter-checkbox:hover + .filters-label,
+.filter-checkbox:focus + .filters-label {
+  font-weight: bold;
+}
+
+.filter-checkbox:focus + .filters-label{
+	outline: 2px solid #a5c7fe;
 }
 
 .filter-price {
   width: 318px;
-  
   padding: 0;
 }
 
@@ -932,6 +959,10 @@ a {
   background: none;
 }
 
+.price-input:focus {
+	outline: 2px solid #a5c7fe;
+}
+
 .price-input::-webkit-input-placeholder {
   color: inherit;
 }
@@ -943,6 +974,11 @@ a {
 }
 .price-input::placeholder {
   color: inherit;
+}
+
+.price-input::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
 }
 
 .range-art {
@@ -970,9 +1006,9 @@ a {
 }
  
 .range-circle:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .range-min {
@@ -1082,17 +1118,15 @@ a {
   display: flex;
   margin-left: auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn-arrow {
-  outline: 0;
   font-size: 0;
   width: 11px;
   height: 10px;
 }
-
 
 .btn-arrow-down {
   margin-left: 11px;
@@ -1106,15 +1140,15 @@ a {
   opacity: 0.3;
 }
 
-.btn-up-svgpath:hover,
-.btn-up-svgpath:focus,
-.btn-down-svgpath:hover,
-.btn-down-svgpath:focus {
+.btn-arrow:hover .btn-up-svgpath,
+.btn-arrow:focus .btn-up-svgpath,
+.btn-arrow:hover .btn-down-svgpath,
+.btn-arrow:focus .btn-down-svgpath {
   opacity: 1;
 }
 
-.btn-up-svgpath:active,
-.btn-down-svgpath:active {
+.btn-arrow:active .btn-up-svgpath,
+.btn-arrow:active .btn-down-svgpath {
   fill: #81b3d2;
 }
 
@@ -1265,25 +1299,25 @@ a {
 
 @-webkit-keyframes showdown {
   to {
-    -webkit-transform: translateY(400px);
-            transform: translateY(400px);
+  	-webkit-transform: translateY(400px);
+  	transform: translateY(400px);
   }
 }
 
 @keyframes showdown {
   to {
-    -webkit-transform: translateY(400px);
-            transform: translateY(400px);
+  	-webkit-transform: translateY(400px);
+  	transform: translateY(400px);
   }
 }
 
 .popup-down {
-  -webkit-animation-name: showdown;
-          animation-name: showdown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+	-webkit-animation-name: showdown;
+	animation-name: showdown;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
 /*Активные элементы*/

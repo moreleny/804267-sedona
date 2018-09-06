@@ -4,14 +4,14 @@ var headerlink = document.querySelector(".main-header-link");
 var sortingtypelink = document.querySelector(".sorting-type-link");
 var btnarrowlink = document.querySelectorAll(".btn-up-svgpath, .btn-down-svgpath");
 
-btnlink.addEventListener("click", function(evt) {
+btnlink.addEventListener("click", function(event) {
 	
 	event.preventDefault();
 	popup.classList.toggle("popup-down");
 	
 });													
 
-/* КОД, КОТОРЫЙ НЕ СМОГ(  
+/*  
 headerlink.addEventListener("click", function(evt) {
 	headerlink.classList.add("active-link");
 });		
