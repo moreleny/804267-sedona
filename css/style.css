@@ -874,7 +874,7 @@ a {
 }
 
 .filter-checkbox + .filters-label:before {
-	content: " ";
+  content: " ";
   position: absolute;
   top: 0;
   left: 0;
@@ -898,10 +898,6 @@ a {
   background: url("../img/checkbox-on.svg")  no-repeat;
 }
 
-.filter-checkbox:hover + .filters-label,
-.filter-checkbox:focus + .filters-label {
-  font-weight: bold;
-}
 
 .filter-checkbox:focus + .filters-label{
 	outline: 2px solid #a5c7fe;
