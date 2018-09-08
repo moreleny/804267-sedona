@@ -46,6 +46,10 @@ a {
 }
 
 /*Хэдер*/
+.main-header {
+  min-height: 56px;
+}
+
 .main-header-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +57,9 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-   flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -225,8 +231,10 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-top: 55px;
-  padding-bottom: 80px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 55px 0;
+  
 }
 
 .advice {
@@ -234,6 +242,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .advice-title {
@@ -271,7 +280,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: 14px;
+  line-height: 21px;
   text-align: center;
   background-color: #eeeeee;
   z-index: 100;
@@ -308,7 +320,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 240px;
+  min-height: 240px;
   padding-top: 52px;
   font-size: 14px;
   line-height: 24px;
@@ -459,6 +471,7 @@ a {
   width: 345px;
   height: 38px;
   padding-left: 12px;
+  line-height: 26px;
 }
 
 .form-label {
@@ -541,6 +554,7 @@ a {
 .half-row-input {
   width: 114px; 
   text-align: center;
+  line-height: 26px;
 }
 
 .half-row-adults-label {
@@ -655,13 +669,15 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -883,8 +899,8 @@ a {
   background: url("../img/checkbox-off.svg")  no-repeat;
 }
 
-.filter-checkbox:disabled + .filters-label,
-.filter-checkbox:checked:disabled + .filters-label {
+.filter-checkbox:disabled + .filters-label:before,
+.filter-checkbox:checked:disabled + .filters-label:before {
   opacity: 0.5;
 }
 
@@ -919,6 +935,7 @@ a {
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  vertical-align: middle;
 }
 
 .price::before {
@@ -936,11 +953,12 @@ a {
 
 .price-label {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+  padding-top: 4px;
   padding-left: 65px;
   font-size: 14px;
   font-weight: normal;
-  line-height: 26px;
+  line-height: 21px;
   cursor: pointer;
 }
 
@@ -951,6 +969,7 @@ a {
   border: none;
   outline: none;
   font: inherit;
+  line-height: 21px;
   color: inherit;
   background: none;
 }
@@ -1076,6 +1095,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1247,8 +1268,10 @@ a {
 
 .rating {
   margin-left: auto;
-  padding: 0 16px;
+  padding: 3px 16px;
   text-align: center;
+  font-size: 14px;
+  line-height: 21px;
   color: #666666;
   background-color: #f2f2f2;
 }
